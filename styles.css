@@ -1,13 +1,12 @@
 /* Grundstil für die ganze Seite */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Navigationsleiste */
+/* Arrow */
 
 
 /* Abschnitte */
@@ -20,55 +19,45 @@ section {
 }
 
 .logo img {
-	max-width: 15%;
+	max-width: 8%;
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 5px;
+	left: 5px;
 }
 
 .first-view img {
-	min-width: 100%;
-	max-width: 100%;
-	min-height: 100%;
+		object-fit: cover;
+		height: 100vh;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+}
+
+.first-view::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	pointer-events: none;
 }
 
 /* Overlay Text */
     .overlay-h1 {
       position: absolute;
       top: 35%;
-      left: 50%;
+      left: 70%;
       transform: translate(-50%, -50%);
       color: grey;
       padding: 1rem 2rem;
       border-radius: 10px;
       font-size: 1.5rem;
       text-align: center;
+	  line-height: 80%;
 	}
-	  
-	.overlay-h2 {
-		position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: grey;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      font-size: 1.5rem;
-      text-align: center;
-	}
-	
-	.overlay-h3 {
-		position: absolute;
-      top: 45%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: grey;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      font-size: 1.5rem;
-      text-align: center;
-	}
-		
+
 
 
 /* Über mich */
@@ -149,4 +138,5 @@ footer {
 }
 footer a {
 	text-decoration: none;
+	color: black;
 ]
